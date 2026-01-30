@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "FFLogs → XIVAnalysis Button",
+  "version": "1.0",
+  "description": "Adds a button to FFLogs reports to open them in XIVAnalysis",
+  "content_scripts": [
+    {
+      "matches": ["https://www.fflogs.com/reports/*"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ]
+}

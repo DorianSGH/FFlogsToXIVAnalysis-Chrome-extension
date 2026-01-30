@@ -1,0 +1,44 @@
+#xivanalysis-button {
+  background: none;
+  border: none;
+  padding: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+#xivanalysis-button img {
+  width: 24px;
+  height: 24px;
+}
+
+#xivanalysis-button:hover img {
+  filter: brightness(1.1);
+}
+
+#xivanalysis-button:active img {
+  transform: scale(0.95);
+}
+
+#xivanalysis-button img {
+  opacity: 0.8;
+}
+#xivanalysis-button:hover img {
+  opacity: 1;
+}
+
+#xivanalysis-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#xivanalysis-tab img {
+  width: 36px;
+  height: 36px;
+}
+
+#xivanalysis-tab:hover img {
+  filter: brightness(1.1);
+}
