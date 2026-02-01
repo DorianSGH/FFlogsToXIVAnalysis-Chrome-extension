@@ -11,10 +11,17 @@
   // Extract fight ID
   const params = new URLSearchParams(window.location.search);
   const fightId = params.get("fight");
+  const sourceId = params.get("source");
 
-  const xivUrl = fightId
-    ? `https://xivanalysis.com/fflogs/${reportId}/${fightId}`
-    : `https://xivanalysis.com/fflogs/${reportId}`;
+  let xivUrl = `https://xivanalysis.com/fflogs/${reportId}`;
+
+  if (fightId) {
+    xivUrl += `/${fightId}`;
+  }
+
+  if (fightId && sourceId) {
+    xivUrl += `/${sourceId}`;
+  }
 
   // Find the FFLogs tab container
   const tabContainer = document.getElementById("top-level-view-tabs");
